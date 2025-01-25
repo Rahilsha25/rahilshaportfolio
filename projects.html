@@ -13,13 +13,15 @@
 	<link rel="stylesheet" href="assets/css/meyawo.css">
 	<meta name="google-site-verification" content="CcsqwoTOoR2s3LVmrvX4-fcm3hy6rRuqzbo4msubvR8" />
     <link rel="stylesheet" type="text/css" href="./assets/css/projectshowcase.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">RAHILSHA DIWAN</a>         
+            <a class="logo" href="./index.html">RAHILSHA DIWAN</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="./index.html">Home</a>
@@ -93,21 +95,75 @@
 
 
     <!-- PROJECT SHOWCASE -->
-    <section class="projectShowcase">
-        <h1>Logo & Graphic Designs</h1>
-        <div class="list">
-            <img src="./assets/imgs/projects/CineToonLogo.png" alt="Logo for Cinetoon Studios" />
-            <img src="./assets/imgs/projects/FunQLogo.png" alt="Logo for FunQ Cars" />
-            <img src="./assets/imgs/projects/FunQPoster.png" alt="Poster for FunQ Cars" />
-            <img src="./assets/imgs/projects/GenCynergyLogo.png" alt="Logo for GenCynergy" />
-            <img src="./assets/imgs/projects/WeddingCard.png" alt="Wedding Card for Marriage" />
-            <img src="./assets/imgs/projects/InternationalDayofFamily.png" alt="Social Media Creative/Post for International Day of Family" />
-            <img src="./assets/imgs/projects/LegacyHotelsLogo.png" alt="Logo for Legacy Hotels" />
-            <img src="./assets/imgs/projects/ToonZillaLogo.png" alt="Logo for ToonZilla Art's Studios" />
+    <section class="gallery-sec sec-pad">
+      <div class="container">
+            <h1 class="section-title mb-6" style="text-align: center;">Project Gallery</h1>
+
+            <div id="gf-BtnContainer" class="filter">
+              <button class="gf-btn gf-btn-active" onclick="filterSelection('bollywood')">Logo & Graphic Designs</button>
+              <button class="gf-btn" onclick="filterSelection('hollywood')">Website Development</button>
+              <button class="gf-btn" onclick="filterSelection('tv')">Games</button>
+            </div>
+            <!-- Gallery Grid Images -->
+            <div class="gallery sets">
+                <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/CineToonLogo.png" alt="Logo for Cinetoon Studios" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/FunQLogo.png" alt="Logo for FunQ Cars Youtube Channel" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/FunQPoster.png" alt="Poster for FunQ Youtube Channel" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/GenCynergyLogo.png" alt="Logo for GenCynergy Technical Club" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/InternationalDayofFamily.png" alt="Social Media Creative/Post Design" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/LegacyHotelsLogo.png" alt="Logo for Legacy Hotels" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/ToonZillaLogo.png" alt="Logo for ToomZilla Art's Studio" />
+                  </div>
+
+                  <div class="gf-column bollywood">
+                    <img src="./assets/imgs/projects/WeddingCard.png" alt="Wedding Card for Marriage Reception" />
+                  </div>
+
+              <div class="gf-column hollywood">
+                <img src="./assets/imgs/nineWebsite.png" alt="Website Design for Nine International Visa Consultancy" />
+              </div>
+
+              <div class="gf-column hollywood">
+                <img src="./assets/imgs/agroWebsite.png" alt="New Static Website for Agrow Farm Agricultural Firm" />
+              </div>
+
+              <div class="gf-column hollywood">
+                <img src="./assets/imgs/exploreWebsite.png" alt="Blog Website Design for Explore & Engage Writers Community by Shahilsha" />
+              </div>
+
+              <div class="gf-column tv">
+                <img src="./assets/imgs/bolley.png" alt="2D Bolley Ball Android Game" />
+              </div>
+
+              <div class="gf-column tv">
+                <img src="./assets/imgs/flightSimulator.png" alt="Flight flightSimulator game for PC available on Windows" />
+              </div>
+
+              <div class="gf-column tv">
+                <img src="./assets/imgs/maxRun.png" alt="2D Endless Runner game available on Anroid." />
+              </div>
+            </div>
         </div>
     </section>
-
-
     <!-- section -->
     <section class="section-sm bg-primary">
         <!-- container -->
@@ -212,6 +268,9 @@
           });
        })();
     </script>
+
+    <!-- Project Gallery -->
+    <script src="./assets/js/projectShowcase.js"></script>
 
 
 	<!-- core  -->
